@@ -1,33 +1,38 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import { Route, Routes } from 'react-router-dom'
+import { Footer } from '../components/Footer'
+
+import { HomePage } from '../pages/homepage'
+import { ProductsPage } from '../pages/products'
+import { ProductDetailPage } from '../pages/ProductDetailPage'
+
 import './App.css'
+import { Navigation } from '../components/Navigation'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <div className="min-h-screen bg-gradient-to-br from-[#faf8f3] to-[#f5f1e8] flex flex-col font-sans">
+
+      {/* Main Content Area */}
+      <main className="flex-1">
+        {/* We render the determined component and pass the fetched items as a prop */}
+        {/* <CurrentPage items={items} loading={loading} /> */}
+        
+        <Navigation />
+          <Routes>
+            <Route path="/" element={<HomePage />} />
+            <Route path="/products" element={<ProductsPage />} />
+            <Route path="/products/:id" element={<ProductDetailPage />} />
+            {/* <Route path="/contact" element={<ContactPage />} /> */}
+          </Routes>
+
+      </main>
+
+      <Footer />
+    </div>
+
     </>
   )
 }
