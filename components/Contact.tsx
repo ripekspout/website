@@ -7,13 +7,14 @@ export function Contact() {
             {/* Left side - Contact Information */}
             <div className="space-y-6">
                 <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-slate-900 leading-tight">
-                Visit Our Sustainable Store
+                Visit Our Store
                 </h2>
                 
                 <div className="space-y-2 text-slate-600">
-                <p className="font-medium text-lg">The Location</p>
-                <p>1234 Garden Boulevard</p>
-                <p>City, CZ 98765</p>
+                <p className="font-medium text-lg">Repack Packaging</p>
+                <p>Komplek Pergudangan Surya Kadu Blok B.3,</p>
+                <p>Jl. Telesonik No.10, Jatake, Curug,</p>
+                <p>Tangerang Regency, Banten 15810</p>
                 </div>
 
                 <div className="space-y-3 text-slate-600">
@@ -31,8 +32,8 @@ export function Contact() {
                     </svg>
                     <div>
                     <p className="font-medium">Email</p>
-                    <a href="mailto:hello@repack.com" className="text-[#3d7c47] hover:underline">
-                        hello@repack.com
+                    <a href="mailto:rkkadm@gmail.com" className="text-[#3d7c47] hover:underline">
+                        rkkadm@gmail.com
                     </a>
                     </div>
                 </div>
@@ -51,8 +52,8 @@ export function Contact() {
                     </svg>
                     <div>
                     <p className="font-medium">Phone</p>
-                    <a href="tel:+1234567890" className="text-[#3d7c47] hover:underline">
-                        +1 (234) 567-890
+                    <a href="tel:02129437922" className="text-[#3d7c47] hover:underline">
+                        +62 (021) 29437922
                     </a>
                     </div>
                 </div>
@@ -71,8 +72,8 @@ export function Contact() {
                     </svg>
                     <div>
                     <p className="font-medium">Store Hours</p>
-                    <p>Mon - Fri: 9:00 AM - 6:00 PM</p>
-                    <p>Sat - Sun: 10:00 AM - 4:00 PM</p>
+                    <p>Mon - Sat: 8:30 AM - 5:00 PM</p>
+                    {/* <p>Sat - Sun: 10:00 AM - 4:00 PM</p> */}
                     </div>
                 </div>
                 </div>
@@ -97,7 +98,7 @@ export function Contact() {
             <div className="relative h-[400px] lg:h-[500px] rounded-2xl overflow-hidden shadow-xl">
                 {/* Google Maps Embed */}
                 <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.6174325978963!2d-73.98823492346447!3d40.74844097138558!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259a9b3117469%3A0xd134e199a405a163!2sEmpire%20State%20Building!5e0!3m2!1sen!2sus!4v1234567890123!5m2!1sen!2sus"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.4561572595308!2d106.5561866015196!3d-6.203399336800679!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69fc766be53ae3%3A0xa5bdc1f0430e40cd!2sREPACK!5e0!3m2!1sen!2sid!4v1768409460047!5m2!1sen!2sid"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}
