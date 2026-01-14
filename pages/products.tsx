@@ -19,13 +19,13 @@ export function ProductsPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center sm:text-left">
           <h1 className="text-4xl font-bold mb-4">Our Products</h1>
           <p className="text-slate-300 text-lg">
-            Browse our complete collection of premium technology products
+            Browse our complete collection of premium spout bags
           </p>
         </div>
       </div>
 
       <div className="items-center justify-center max-w-7xl mx-auto px-4 pt-10">
-                <nav className="mb-8 flex items-center gap-2 text-sm text-slate-600">
+          <nav className="mb-8 flex items-center gap-2 text-sm text-slate-600">
             <button
                 onClick={() => navigate("/")}
                 className="bg-[#d4b996] hover:bg-[#c0a580] text-white font-bold py-2 px-4 rounded"

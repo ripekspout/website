@@ -15,11 +15,18 @@ export function ProductDetailPage() {
                 <div className="p-8 text-center">
                     <h2 className="text-2xl font-bold mb-4">Product Not Found</h2>
                     <button
-                        onClick={() => navigate("/")}
+                        onClick={() => navigate("/products")}
                         className="bg-[#d4b996] hover:bg-[#c0a580] text-white font-bold py-2 px-4 rounded"
                     >
                         Back to Products
                     </button>
+                                        <button
+                        onClick={() => navigate("/")}
+                        className="bg-[#d4b996] hover:bg-[#c0a580] text-white font-bold py-2 px-4 rounded"
+                    >
+                        Back to Home
+                    </button>
+
                 </div>
             </div>
         );
@@ -35,6 +42,13 @@ export function ProductDetailPage() {
                 className="bg-[#d4b996] hover:bg-[#c0a580] text-white font-bold py-2 px-4 rounded"
             >
                 Back to Products
+            </button>
+
+            <button
+                onClick={() => navigate("/")}
+                className="bg-[#d4b996] hover:bg-[#c0a580] text-white font-bold py-2 px-4 rounded"
+            >
+                Home
             </button>
             <span className="text-slate-900 font-medium">{product.category}</span>
             </nav>
