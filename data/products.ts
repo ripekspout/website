@@ -12,7 +12,7 @@ export const products: Product[] = [
     id: "1",
     name: "Spout Bag Small",
     description: "Immersive sound quality with active noise cancellation",
-    images: ["./src/assets/spout_1.jpg", "../src/assets/spout_2.jpg", "../src/assets/spout_3.jpg", "../src/assets/spout_4.jpg"],
+    images: [`${import.meta.env.BASE_URL}spout_1.jpg`, `${import.meta.env.BASE_URL}spout_2.jpg`, `${import.meta.env.BASE_URL}spout_3.jpg`, `${import.meta.env.BASE_URL}spout_4.jpg`],
     specs: [
       { label: "Length", value: "130 mm" },
       { label: "Width", value: "190 mm" },
