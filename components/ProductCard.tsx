@@ -16,7 +16,7 @@ interface ProductCardProps {
 export function ProductCard({ id, name, description, images, rating = 5 }: ProductCardProps) {
   const navigate = useNavigate();
 
-  const [imageError, setImageError] = useState(false);
+  const [imageError, _] = useState(false);
   const showComingSoon = !images || images.length === 0 || imageError;
   console.log(showComingSoon)
 
