@@ -17,7 +17,6 @@ export function Hero() {
 
     const images: CarouselImage[] = [
     { id: 1, url: `${import.meta.env.BASE_URL}spout_1.jpg`, alt: 'spout bag medium' },
-    { id: 2, url: `${import.meta.env.BASE_URL}spout_side_medium.jpeg`, alt: 'Spout bag medium' },
     { id: 3, url: `${import.meta.env.BASE_URL}spout_4.jpg`, alt: 'spout bag medium' },
     { id: 4, url: `${import.meta.env.BASE_URL}spout_5.jpg`, alt: 'spout bag with handle' },
     ];
