@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { useNavigate, useLocation } from "react-router-dom";
+import { useNavigate, useLocation, href } from "react-router-dom";
 
 
 export function Navigation() {
@@ -43,12 +43,15 @@ export function Navigation() {
 
     const links = [
         { href: "#products", label: "Products" },
-        { href: "#about", label: "About" },
-        { href: "#contact", label: "Contact Us" }
+        { href: "#contact", label: "Contact Us" },
+        { href: "repackpouch.com", label: "REPACK Home"}
     ];
 
     const handleClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
         e.preventDefault();
+        if (href == 'repackpouch.com') {
+
+        }
 
         // If it's a hash link (same page section)
         if (href.startsWith('#')) {
@@ -140,8 +143,8 @@ export function Navigation() {
             links.map((link, index) => (
                     <a
                         key={link.href}
-                        href={link.href}
-                        onClick={(e) => handleClick(e, link.href)}
+                        href={link.href == 'repackpouch.com' ? "https://www.repackpouch.com" : link.href}
+                        onClick={link.href == 'repackpouch.com' ? null : (e) => handleClick(e, link.href)}
                         className={`
                             text-sm font-medium relative
                             transition-all duration-300 ease-out

@@ -16,13 +16,19 @@ interface ProductCardProps {
 export function ProductCard({ id, name, description, images, rating = 5 }: ProductCardProps) {
   const navigate = useNavigate();
 
-  const [imageError, _] = useState(false);
-  const showComingSoon = !images || images.length === 0 || imageError;
+  const [imageError, ] = useState(false);
+  const showComingSoon = !images || images.length === 0 || imageError || images[0].length == 0 ;
   console.log(showComingSoon)
 
   return (
-    
-    <Card 
+    showComingSoon ? (
+              <div className="coming-soon-placeholder">
+                <span className="coming-soon-icon">📦</span>
+                <h3>Coming Soon</h3>
+              </div>
+    )
+    : (
+          <Card 
       className="group overflow-hidden hover:shadow-xl transition-all duration-300 cursor-pointer"
       onClick={() => navigate(`/products/${id}`)}
     >
@@ -30,14 +36,6 @@ export function ProductCard({ id, name, description, images, rating = 5 }: Produ
         
         {/* Image Section */}
         <div className="relative overflow-hidden aspect-square bg-slate-100">
-          {showComingSoon ? (
-              <div className="coming-soon-placeholder">
-                <span className="coming-soon-icon">📦</span>
-                <h3>Coming Soon</h3>
-                <p>{name}</p>
-              </div>
-          )
-          : (
             <img 
               src={images[0]} 
               alt={name}
@@ -47,8 +45,6 @@ export function ProductCard({ id, name, description, images, rating = 5 }: Produ
                 (e.target as HTMLImageElement).src = 'https://via.placeholder.com/300?text=No+Image';
               }}
             />
-            )
-          }
         </div>
         
         {/* Content Section */}
@@ -83,5 +79,9 @@ export function ProductCard({ id, name, description, images, rating = 5 }: Produ
         </div>
       </div>
     </Card>
+
+    )
+
+    
   );
 }
