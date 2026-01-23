@@ -3,9 +3,14 @@ const features = [
     // Diamond Jewel Icon
     icon: (props: any) => (
       <svg {...props} xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-        <path d="M2.7 10.3a2.41 2.41 0 0 0 0 3.41l7.59 7.59a2.41 2.41 0 0 0 3.41 0l7.59-7.59a2.41 2.41 0 0 0 0-3.41l-7.59-7.59a2.41 2.41 0 0 0-3.41 0Z"/>
-        <path d="M12 7l-3 5h6l-3-5z"/>
-        <path d="M12 17l3-5H9l3 5z"/>
+      {/* Top part of diamond */}
+      <path d="M6 9L2 9 12 2 22 9 18 9"/>
+      {/* Bottom part of diamond */}
+      <path d="M2 9L12 22 22 9"/>
+      {/* Inner lines */}
+      <path d="M7 9L12 22"/>
+      <path d="M12 2L12 22"/>
+      <path d="M17 9L12 22"/>
       </svg>
     ),
     title: "Premium Quality",
@@ -32,7 +37,20 @@ const features = [
     ),
     title: "Long lasting",
     description: "Our spout bags are designed to be durable and reliable."
-  }
+  },
+  {
+    // Plant sprout
+    icon: (props: any) => (
+      <svg {...props} xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+      <path d="M7 20h10"/>
+      <path d="M10 20c5.5-2.5.8-6.4 3-10"/>
+      <path d="M9.5 9.4c1.1.8 1.8 2.2 2.3 3.7-2 .4-3.5.4-4.8-.3-1.2-.6-2.3-1.9-3-4.2 2.8-.5 4.4 0 5.5.8z"/>
+      <path d="M14.1 6a7 7 0 0 0-1.1 4c1.9-.1 3.3-.6 4.3-1.4 1-1 1.6-2.3 1.7-4.6-2.7.1-4 1-4.9 2z"/>
+      </svg>
+    ),
+    title: "Eco friendly",
+    description: "Uses less plastic materials when compared to rigid containers like bottles."
+  },
 ];
 
 
@@ -47,7 +65,7 @@ export function Solutions() {
           </p>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-12">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 lg:gap-12">
           {features.map((feature) => (
             <div 
               key={feature.title} 
