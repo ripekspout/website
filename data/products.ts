@@ -12,10 +12,10 @@ export const products: Product[] = [
     id: "1",
     name: "Spout Side Bag Small",
     description: "Small spout bag perfect for liquids and gels with spout nozzle at the side.",
-    images: [`${import.meta.env.BASE_URL}spout_side_small.jpeg`],
+    images: [`${import.meta.env.BASE_URL}spout_side_small.jpeg`, `${import.meta.env.BASE_URL}S-front.jpeg`, `${import.meta.env.BASE_URL}S-back.jpeg`,  `${import.meta.env.BASE_URL}S-front_1.jpeg`,  `${import.meta.env.BASE_URL}S-back_1.jpeg`, `${import.meta.env.BASE_URL}S-front_2.jpeg`, `${import.meta.env.BASE_URL}S-back_2.jpeg`],
     specs: [
       { label: "Length", value: "100 mm" },
-      { label: "Width", value: "120 mm" },
+      { label: "Width", value: "160 mm" },
       { label: "Thickness", value: "130 mic" },
       { label: "Nozzle Diameter", value: "10mm" }
     ]
@@ -37,19 +37,19 @@ export const products: Product[] = [
     name: "Spout Side Bag Medium",
     category: "Spout Bag",
     description: "Medium spout bag perfect for liquids and gels with spout nozzle at the side.",
-    images: [``],
+    images: [`${import.meta.env.BASE_URL}L-front.jpeg`, `${import.meta.env.BASE_URL}L-back.jpeg`, `${import.meta.env.BASE_URL}L-front_1.jpeg`, `${import.meta.env.BASE_URL}L-back_1.jpeg`],
     specs: [
-      { label: "Length", value: "200 mm" },
+      { label: "Length", value: "140 mm" },
       { label: "Width", value: "230 mm" },
       { label: "Thickness", value: "130 mic" },
-      { label: "Nozzle Diameter", value: "26mm" }
+      { label: "Nozzle Diameter", value: "10mm" }
     ]
   },
   {
     id: "4",
     name: "Spout Side Bag Medium with Handle",
     description: "Medium spout bag perfect for liquids and gels with spout nozzle at the side and a handle.",
-    images: [],
+    images: [ `${import.meta.env.BASE_URL}spout_side_medium_handle.jpeg`],
     specs: [
       { label: "Length", value: "200 mm" },
       { label: "Width", value: "250 mm" },

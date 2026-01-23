@@ -11,8 +11,8 @@ export function WhatsAppButton() {
   const containerRef = useRef<HTMLDivElement>(null);
 
   const whatsappNumbers: WhatsAppContact[] = [
-    { name: 'Sales', number: '60123456789' },
-    { name: 'Support', number: '60198765432' }
+    { name: 'Sales', number: '628161677898' },
+    { name: 'Support', number: '628161152204' }
   ];
 
   useEffect(() => {

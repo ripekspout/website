@@ -48,32 +48,7 @@ export function ProductCard({ id, name, description, images, rating = 5 }: Produ
         </div>
         
         {/* Content Section */}
-        <div className="p-6">
-          <div className="flex items-center gap-1 mb-2">
-            {Array.from({ length: 5 }).map((_, i) => (
-              <svg
-                key={i}
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                className={`h-4 w-4 ${
-                  i < rating 
-                    ? "fill-yellow-400 text-yellow-400" 
-                    : "fill-slate-100 text-slate-300"
-                }`}
-              >
-                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
-              </svg>
-            ))}
-            {/* <span className="text-slate-600 ml-2 text-sm">({rating}.0)</span> */}
-          </div>
-          
+        <div className="p-6">          
           <h3 className="font-semibold leading-none tracking-tight mb-2 text-lg">{name}</h3>
           <p className="text-sm text-slate-600 mb-4 line-clamp-2">{description}</p>
         </div>
