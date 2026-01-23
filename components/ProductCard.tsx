@@ -13,7 +13,7 @@ interface ProductCardProps {
     rating?: number;
 }
 
-export function ProductCard({ id, name, description, images, rating = 5 }: ProductCardProps) {
+export function ProductCard({ id, name, description, images }: ProductCardProps) {
   const navigate = useNavigate();
 
   const [imageError, ] = useState(false);
