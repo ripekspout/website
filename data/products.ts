@@ -17,7 +17,8 @@ export const products: Product[] = [
     specs: [
       { label: "Length", value: "100 mm" },
       { label: "Width", value: "160 mm" },
-      { label: "Thickness", value: "130 mic" },
+      { label: "Bottom", value: "250 mm" },
+      { label: "Thickness", value: "155 mic" },
       { label: "Nozzle Diameter", value: "10mm" }
     ]
   },
@@ -30,7 +31,8 @@ export const products: Product[] = [
     specs: [
       { label: "Length", value: "90 mm" },
       { label: "Width", value: "120 mm" },
-      { label: "Thickness", value: "145 mic" },
+      { label: "Bottom", value: "250 mm" },
+      { label: "Thickness", value: "155 mic" },
       { label: "Nozzle Diameter", value: "25mm" }
     ]
   },
@@ -43,7 +45,8 @@ export const products: Product[] = [
     specs: [
       { label: "Length", value: "140 mm" },
       { label: "Width", value: "230 mm" },
-      { label: "Thickness", value: "130 mic" },
+      { label: "Bottom", value: "250 mm" },
+      { label: "Thickness", value: "155 mic" },
       { label: "Nozzle Diameter", value: "10mm" }
     ]
   },
@@ -56,7 +59,8 @@ export const products: Product[] = [
     specs: [
       { label: "Length", value: "200 mm" },
       { label: "Width", value: "250 mm" },
-      { label: "Thickness", value: "130 mic" },
+      { label: "Bottom", value: "250 mm" },
+      { label: "Thickness", value: "155 mic" },
       { label: "Nozzle Diameter", value: "22mm" }
     ]
   }

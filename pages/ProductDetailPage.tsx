@@ -118,13 +118,13 @@ export function ProductDetailPage() {
                     <div className="flex items-center gap-3 text-slate-600">
                         <ul>
                             <li>
-                                <span className="font-medium">Available Sizes: <br/>{product.specs[0].value} x {product.specs[1].value}</span>
+                                <span className="font-medium">Available Sizes: <br/>{product.specs[0].value} x {product.specs[1].value} x {product.specs[2].value}</span>
                             </li>
                             <li>
-                                <span className="font-medium"><br/>Available Thickness: <br/>{product.specs[2].value}</span>
+                                <span className="font-medium"><br/>Available Thickness: <br/>{product.specs[3].value}</span>
                             </li>
                             <li>
-                                <span className="font-medium"><br/>Available Nozzle Diameters: <br/>{product.specs[3].value}</span>
+                                <span className="font-medium"><br/>Available Nozzle Diameters: <br/>{product.specs[4].value}</span>
                             </li>
                         </ul>                    
                     </div>
