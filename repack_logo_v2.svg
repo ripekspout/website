@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 280" width="1280" height="280">
+  <defs>
+    <style>
+      .red-text { 
+        fill: #E85535;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 900;
+        font-style: italic;
+      }
+      .gray-text { 
+        fill: #999999;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 900;
+        font-style: italic;
+      }
+    </style>
+  </defs>
+  
+  <!-- RE Text (Red/Orange) -->
+  <text x="15" y="220" font-size="240" class="red-text" letter-spacing="-12">RE</text>
+  
+  <!-- PACK Text (Gray) -->
+  <text x="470" y="220" font-size="240" class="gray-text" letter-spacing="-5">PACK</text>
+</svg>
