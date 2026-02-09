@@ -78,6 +78,7 @@ export function Contact() {
                 </div>
                 </div>
 
+                <a href="https://www.google.com/maps/place/REPACK/@-6.203387,106.560956,16z/data=!4m6!3m5!1s0x2e69fc766be53ae3:0xa5bdc1f0430e40cd!8m2!3d-6.2033867!4d106.5609562!16s%2Fg%2F11k5d2ljmp?hl=en&entry=ttu&g_ep=EgoyMDI2MDIwNC4wIKXMDSoASAFQAw%3D%3D">
                 <button className="px-6 py-3 bg-black text-white font-semibold rounded-lg hover:bg-slate-800 transition-all duration-300 hover:-translate-y-0.5 hover:shadow-lg inline-flex items-center gap-2">
                 Get directions
                 <svg 
@@ -92,6 +93,7 @@ export function Contact() {
                     <path d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
                 </svg>
                 </button>
+                </a>
             </div>
 
             {/* Right side - Map */}
