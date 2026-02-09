@@ -67,7 +67,7 @@ export function Products() {
             </div>
           ) : (
           <div className="lg:col-span-7 group cursor-pointer" onClick={() => navigate(`/products/${products[1].id}`)}>
-            <div className="relative h-[250px] sm:h-[300px] lg:h-[250px] rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2">
+            <div className="relative h-[250px] sm:h-[400px] lg:h-[450px] rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2">
               <img
                 src={products[1].images[0]}
                 alt={products[1].name}
