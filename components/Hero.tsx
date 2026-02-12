@@ -17,7 +17,7 @@ export function Hero() {
 
     const images: CarouselImage[] = [
     { id: 1, url: `${import.meta.env.BASE_URL}Homepage-1.jpeg`, alt: 'spout bag medium' },
-    { id: 2, url: `${import.meta.env.BASE_URL}Homepage-2.jpeg`, alt: 'spout bag medium' },
+    { id: 2, url: `${import.meta.env.BASE_URL}Homepage-2.JPG`, alt: 'spout bag medium' },
     ];
 
     // Parallax effect on mouse move
