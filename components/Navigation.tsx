@@ -1,4 +1,4 @@
-import { link } from "fs";
+// import { link } from "fs";
 import React, { useState, useEffect } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
 
@@ -53,16 +53,16 @@ export function Navigation() {
     }, [isScrolled]);
 
     // Check active state - now includes active section detection
-    const isActive = (path: string) => {
-        if (path.startsWith('#')) {
-            // Check if we're on homepage and either:
-            // 1. The hash matches the URL hash
-            // 2. The section is currently in view
-            return location.pathname === '/' && 
-                   (location.hash === path || activeSection === path);
-        }
-        return location.pathname === path;
-    };
+    // const isActive = (path: string) => {
+    //     if (path.startsWith('#')) {
+    //         // Check if we're on homepage and either:
+    //         // 1. The hash matches the URL hash
+    //         // 2. The section is currently in view
+    //         return location.pathname === '/' && 
+    //                (location.hash === path || activeSection === path);
+    //     }
+    //     return location.pathname === path;
+    // };
 
     const links = [
         { href: "#products", label: "Products" },
