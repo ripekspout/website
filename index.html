@@ -4,8 +4,27 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/website/repack_logo_v2.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>repack</title>
-    <script type="module" crossorigin src="/website/assets/index-Tf11zuff.js"></script>
+    <title>REPACK - Premium Spout Bags</title>
+
+    <!-- GitHub Pages SPA routing fix -->
+    <script type="text/javascript">
+      // Single Page Apps for GitHub Pages
+      // Converts back: /website/?/products/product-1
+      // To: /website/products/product-1
+      (function(l) {
+        if (l.search[1] === '/' ) {
+          var decoded = l.search.slice(1).split('&').map(function(s) { 
+            return s.replace(/~and~/g, '&')
+          }).join('?');
+          window.history.replaceState(null, null,
+              l.pathname.slice(0, -1) + decoded + l.hash
+          );
+        }
+      }(window.location))
+    </script>
+    <!-- End GitHub Pages fix -->
+
+    <script type="module" crossorigin src="/website/assets/index-D_ufgLvA.js"></script>
     <link rel="stylesheet" crossorigin href="/website/assets/index-DA25mOEY.css">
   </head>
   <body>
