@@ -7,7 +7,7 @@ export function Navigation() {
 
     const [isScrolled, setIsScrolled] = useState(false);
     const [_, setPrevScrollY] = useState(0);
-    // const [activeSection, setActiveSection] = useState('');
+    const [, setActiveSection] = useState('');
     const navigate = useNavigate();
     const location = useLocation();
 
